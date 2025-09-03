@@ -1,23 +1,23 @@
-# 🎯 Skill Matching Agent
+# 🎯 A-MATCH Agent
 
 A comprehensive skill matching and learning recommendation platform built with Streamlit. This application helps employees assess their skills, match with suitable positions, and get personalized learning recommendations for career development.
 
 ## 🌟 Features
 
-### 📋 Employee Self-Input Profile
+### Employee Self-Input Profile
 
 - **Current Skills**: Select and rate skills across technical, business, and soft skill categories
 - **Current Position**: Job title, department, seniority level, and work details
 - **Career Goals**: Target roles, timeline, priorities, and learning preferences
 
-### 🎯 Core Functionality
+### Core Functionality
 
 - **Skill Gap Analysis**: Compare current skills with job requirements
 - **Position Matching**: Find matching positions based on skills and preferences
 - **Learning Recommendations**: Personalized learning plans with internal and external resources
 - **Career Path Suggestions**: Identify potential career progression opportunities
 
-### 📊 Analytics & Insights
+### Analytics & Insights
 
 - **Skill Trends**: Identify trending skills in the job market
 - **Progress Tracking**: Monitor skill development over time
@@ -112,23 +112,6 @@ A-MATCH-AGENT/
 - Access both internal and external resources
 - Track progress and completion
 
-## 🎨 User Interface Layout
-
-The employee input follows a structured three-column layout:
-
-```
-┌─────────────────────────────────────────────────────────────┐
-│                    EMPLOYEE SELF-INPUT                     │
-├─────────────────────┬─────────────────────┬─────────────────┤
-│   CURRENT SKILLS    │   CURRENT POSITION  │   CAREER GOALS  │
-│                     │                     │                 │
-│ • Skill Name        │ • Job Title         │ • Target Role   │
-│ • Proficiency Level │ • Department        │ • Timeline      │
-│ • Years Experience  │ • Seniority Level   │ • Priorities    │
-│ • Certifications    │ • Team/Function     │ • Preferences   │
-└─────────────────────┴─────────────────────┴─────────────────┘
-```
-
 ## 📊 Data Models
 
 ### Skills Taxonomy
@@ -148,55 +131,6 @@ The employee input follows a structured three-column layout:
 - Internal company training and workshops
 - External courses from Coursera, Udemy, LinkedIn Learning
 - Certifications and professional development
-
-## ⚙️ Configuration
-
-### Environment Variables
-
-- `OPENAI_API_KEY`: For AI-powered recommendations
-- `COURSERA_API_KEY`: Access to Coursera course catalog
-- `UDEMY_API_KEY`: Udemy course integration
-- `LINKEDIN_LEARNING_API_KEY`: LinkedIn Learning resources
-
-### Customization
-
-- Modify `data/skills_taxonomy.json` to add your company's skills
-- Update `data/positions.json` with current open positions
-- Add internal learning resources to `data/learning_resources.json`
-
-## 🔧 Technical Details
-
-### Backend Components
-
-- **DataManager**: Handles data persistence and retrieval
-- **SkillMatcher**: Implements matching algorithms and gap analysis
-- **LearningRecommender**: Generates personalized learning paths
-
-### Frontend Features
-
-- Responsive Streamlit interface with custom CSS
-- Interactive form validation and progress tracking
-- Real-time preview and data visualization
-
-### Data Storage
-
-- JSON-based data storage (easily replaceable with database)
-- Employee profile management with versioning
-- Secure data handling and validation
-
-## 🤝 Contributing
-
-### Adding New Skills
-
-1. Edit `data/skills_taxonomy.json`
-2. Add skills to appropriate categories
-3. Include descriptions and related skills
-
-### Adding Learning Resources
-
-1. Update `data/learning_resources.json`
-2. Specify internal or external resources
-3. Include skill mappings and metadata
 
 ### Customizing UI
 
