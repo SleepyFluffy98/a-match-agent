@@ -20,7 +20,6 @@ A comprehensive skill matching and learning recommendation platform built with S
 ### Analytics & Insights
 
 - **Skill Trends**: Identify trending skills in the job market
-- **Progress Tracking**: Monitor skill development over time
 - **Interactive Dashboard**: Visual analytics and insights
 
 ## 🏗️ Project Structure
